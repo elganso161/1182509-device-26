@@ -39,14 +39,26 @@
            <li><a href="#">Каталог товаров</a></li>
            <li class="breadcrumbs-current">Моноподы для селфи</li>
        </ul>
-       <section class="filters">
+       <section>
          <div>
-              <!-- Здесь будет форма -->
-              <button type="button">ПОКАЗАТЬ</button>
-         </div>
-       </section>
-       <section class="catalog">
-         <div>
+             <ul>
+                <h2>Фильтр:</h2>
+                 <li><p>Стоимость</p></li>
+                  <!-- Здесь будет форма -->
+                  <li><button type="button">ПОКАЗАТЬ</button></li>
+             </ul>
+             <h3>Сортировка:</h3>
+             <ul>
+                 <li>
+                     <button class="current" type="button">По цене</button>
+                 </li>
+                 <li>
+                     <button type="button">По типу</button>
+                 </li>
+                 <li>
+                     <button type="button">По популярности</button>
+                 </li>
+             </ul>
               <ul class="catalog-list">
                   <li class="catalog-item">
                       <a href="#"><img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка"></a>
@@ -70,6 +82,19 @@
                   </li>
               </ul>
          </div>  
+       </section>
+       <section>
+           <ul>
+               <li class="current">1</li>
+               <li>2</li>
+               <li>3</li>
+           </ul>
+           <ul>
+               <li>
+                   <button type="button">Назад</button>
+                   <button type="button">Вперед</button>
+               </li>
+           </ul>
        </section>
     </main>
     
