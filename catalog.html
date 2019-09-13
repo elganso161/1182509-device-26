@@ -14,15 +14,24 @@
           </a>
         </div>
         <div>
-          <ul>
-            <!-- Здесь будет форма -->
-            <li>
-              <button type="button">
-                  <img src="img/user.svg" alt="Войти" />
-                Войти
-              </button>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                <form action="#" method="POST">
+                  <label for="site-search">
+                    <img src="img/svg-device/search.svg" alt="Поиск">
+                  </label>
+                  <input type="text" name="search" id="site-search" placeholder="Поиск по сайту">
+                </li>
+                </form>
+              </ul>
+              <ul>
+                <li>
+                   <a class="login-link" href="login.html">
+                      <img src="img/svg-device/user.svg" alt="Пользователь">
+                    Войти
+                   </a>
+                </li>
+              </ul>
           <ul>
             <li>
               <a href="#">
@@ -70,19 +79,44 @@
             <p>Стоимость</p>
             <!-- Здесь будет форма -->
             <h4>Цвет</h4>
-            <ul>
-              <li>Черный</li>
-              <li>Белый</li>
-              <li>Синий</li>
-              <li>Красный</li>
-              <li>Розовый</li>
-            </ul>
+              <form class="filter" method="GET" action="#">
+                <ul>
+                  <li>
+                    <input id="color-item-black" type="checkbox">
+                    <label for="color-item-black">Черный</label>
+                  </li>
+                  <li>
+                    <input id="color-item-white" type="checkbox">
+                    <label for="color-item-white">Белый</label>
+                  </li>
+                  <li>
+                    <input id="color-item-Blue" type="checkbox">
+                    <label for="color-item-Blue">Синий</label>
+                  </li>
+                  <li>
+                    <input id="color-item-red" type="checkbox">
+                    <label for="color-item-red">Красный</label>
+                  </li>
+                  <li>
+                    <input id="color-item-Pink" type="checkbox">
+                    <label for="color-item-Pink">Розовый</label>
+                  </li>
+                </ul>
+              </form>
             <h5>Bluetooth</h5>
-            <ul>
-              <li>Есть</li>
-              <li>Нет</li>
-            </ul>
-            <button type="button">ПОКАЗАТЬ</button>
+           <form class="filter" method="GET" action="#">
+              <ul>
+                <li>
+                  <input id="Bluetooth-yes" type="radio" name="bluetooth">
+                  <label for="Bluetooth-yes">Есть</label>
+                  </li>
+                <li>
+                  <input id="Bluetooth-no" type="radio" name="bluetooth">
+                  <label for="Bluetooth-no"> Нет</label>
+                </li>
+              </ul>
+              <button type="button">ПОКАЗАТЬ</button>
+            </form>
           </div>
           <div>
             <button type="button"><img src="img/svg-device/icon-up-dir.svg" alt="icon-up"></button>
@@ -165,27 +199,30 @@
           <div>
               <ul>
                 <li>
-                  <button type="button">
-                     <img src="img/user.svg" alt="Войти"/>
+                    <a class="login-link" href="login.html">
+                      <img src="img/svg-device/user.svg" alt="Пользователь">
                     Войти
-                  </button>
+                    </a>
                 </li>
-                <li>
-                  <a href="#">
-                     <img src="img/compare.svg" alt="Сравнить" />
-                    Сравнить
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                      <img src="img/cart.svg" alt="Корзина" />
-                    Корзина
-                  </a>
-                </li>
+              </ul>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/compare.svg" alt="Сравнить" />
+                      Сравнить
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <img src="img/cart.svg" alt="Корзина" />
+                      Корзина
+                    </a>
+                  </li>
               </ul>
             </div>
         <p>Тел.: +7 (495) 495-95-95</p>
       </section>
     </footer>
+    
   </body>
 </html>
