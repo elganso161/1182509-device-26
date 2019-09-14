@@ -76,8 +76,11 @@
             </ul>
           </div>
           <div>
-            <p>Стоимость</p>
-            <!-- Здесь будет форма -->
+            <p>
+              <label for="price">Стоимость</label>
+            </p>
+            <input type="range" id="price" name="price" min="0" max="10000" step="1">
+            <!-- <output name="price"></output> -->
             <h4>Цвет</h4>
               <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
                 <ul>
@@ -190,9 +193,9 @@
         <div>
           <h2 class="visually-hidden">Соцсети</h2>
           <ul>
-            <li><a href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a></li>
-            <li><a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
-            <li><a href="#"><img src="img/twiter.svg" alt="Твитер"></a></li>
+            <li><a aria-label="Фэйсбук" href="#"><img src="img/facebook.svg" alt="Фэйсбук"></a></li>
+            <li><a aria-label="Инстаграм" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
+            <li><a aria-label="Твитер" href="#"><img src="img/twiter.svg" alt="Твитер"></a></li>
           </ul>
         </div>
       </section>
