@@ -59,6 +59,7 @@ a {
     font-weight: 800;
     color: #000;
     list-style: none;
+    text-transform: uppercase;
 }
 
 .about {
@@ -99,12 +100,14 @@ a {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    text-transform: uppercase;
 }
 
 .communication {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    text-transform: uppercase;
 }
 
 
@@ -122,8 +125,7 @@ footer {
     font-size: 18px;
     font-weight: 800;
     color: #fff;
-    
-
+    text-transform: uppercase;
 }
 
 .footer-user {
