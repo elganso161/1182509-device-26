@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
@@ -13,8 +15,8 @@
             <img src="img/logo.svg" width="170" height="45" alt="Логотип DEVICE"/>
           </a>
         </div>
-        <div>
-          <ul>
+        <div class="user-navigation">
+          <ul class="site-search">
             <li>
             <form action="https://echo.htmlacademy.ru" method="POST">
               <label for="site-search">
@@ -24,7 +26,7 @@
             </form>
             </li>
           </ul>
-          <ul>
+          <ul class="user-enter">
             <li>
                <a class="login-link" href="login.html">
                  <img src="img/svg-device/user.svg" alt="Пользователь">
@@ -32,7 +34,7 @@
                </a>
             </li>
           </ul>
-          <ul>
+          <ul class="user-compare">
             <li>
               <a href="#">
                 <img src="img/compare.svg" alt="Сравнить" />
@@ -155,69 +157,71 @@
       <section>
         <ul>
           <li>
-            <a href="#"
-              ><img src="img/dji.png" alt="Лого"/>
+            <a href="#">
+                <img src="img/dji.png" alt="Лого"/>
             </a>
           </li>
           <li>
-            <a href="#"
-              ><img src="img/sp-gadgets.png" alt="Лого"/>
+            <a href="#">
+              <img src="img/sp-gadgets.png" alt="Лого"/>
             </a>
           </li>
           <li>
-            <a href="#"
-              ><img src="img/gopro.png" alt="Лого"/>
+            <a href="#">
+              <img src="img/gopro.png" alt="Лого"/>
             </a>
           </li>
           <li>
-            <a href="#"
-              ><img src="img/vive.png" alt="Лого"
-            /></a>
+            <a href="#">
+              <img src="img/vive.png" alt="Лого"/>
+            </a>
           </li>
         </ul>
       </section>
       <section>
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
-          работает со многими транспортными компаниями:
-        </p>
-        <ul>
+        <h2 class="about">О нас</h2>
+        <div class="about-text">
+            <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+            </p>
+            <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+            работает со многими транспортными компаниями:
+            </p>
+        </div>
+        <ul class="transport">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <a class="info" href="#">Подробнее о нас</a>
       </section>
       <section>
-        <h2>Контакты</h2>
-        <p>
+        <h2 class="contact">Контакты</h2>
+        <p class="contact-text">
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a href="">
+        <a href="#">
           <img src="img/map.png" width="562" height="223" alt="Фото карты" />
         </a>
-        <a href="#">Напишите нам</a>
+        <a class="communication" href="#">Напишите нам</a>
       </section>
     </main>
     <footer>
       <section>
         <div>
           <a href="index.html">
-            <img src="img/logo.svg" width="170" height="45" alt="Логотип DEVICE"/>
+            <img class="footer-logo" src="img/footer-logo.svg" width="170" height="45" alt="Логотип DEVICE"/>
           </a>
         </div>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
       </section>
       <section>
-        <nav class="footer-navigation">
+        <nav>
           <div>
-            <ul class="site-navigation">
+            <ul class="footer-nav">
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
@@ -235,7 +239,7 @@
       </section>
       <section>
         <div>
-          <ul>
+          <ul class="footer-user">
             <li>
               <a class="login-link" href="login.html">
                 <img src="img/svg-device/user.svg" alt="Пользователь">
