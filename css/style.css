@@ -6,6 +6,16 @@ body {
     line-height: 24px;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
@@ -46,7 +56,7 @@ a {
 }
 
 .user-enter {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #000;
@@ -54,7 +64,7 @@ a {
 }
 
 .user-compare {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #000;
@@ -69,6 +79,97 @@ a {
     text-transform: uppercase;
 }
 
+.slider-num {
+    font-size: 179.2px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-title {
+    font-size: 47px;
+    font-weight: 800;
+    color: #000;
+    line-height: 56px;
+}
+
+.slider-text {
+    font-family: 'Open Sans', Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #464646;
+    line-height: 30px;
+}
+
+.slider-item {
+    list-style: none;
+}
+
+.slider-item p {
+    font-family: 'Open Sans', Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #464646;
+    line-height: 20px;
+}
+
+.slider-item span {
+    font-size: 36px;
+    font-weight: 300;
+    color: #000;
+    line-height: 48px;
+}
+
+.category-item {
+    list-style: none;
+}
+
+.category-item img {
+    background-color: #f7e296;
+}
+
+.category-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+}
+
+.services {
+    background-color: #e5e5e5; width: 100%; height: 288px;
+}
+
+.services-item {
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    list-style: none;
+    border: none;
+}
+
+.services .current {
+    color: #f7e184;
+}
+
+.services-title {
+    font-size: 47px;
+    font-weight: 800;
+    color: #000;
+    line-height: 48px;
+}
+
+.services-text {
+    font-family: 'Open Sans', Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #464646;
+}
+
+.partners ul{
+    list-style: none;
+}
+
+
 .about {
     font-size: 47px;
     font-weight: 800;
@@ -76,7 +177,7 @@ a {
 }
 
 .about-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #464646;
@@ -97,7 +198,7 @@ a {
 }
 
 .contact-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #464646;
@@ -144,14 +245,14 @@ a {
 }
 
 .footer-user a{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #fff;
 }
 
 .footer-address {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 15px;
     font-weight: 300;
     color: #fff;
@@ -165,7 +266,7 @@ a {
 }
 
 .breadcrumbs li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: #000;
@@ -183,8 +284,20 @@ a {
     color: #000;
 }
 
+.filter-item {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    opacity: 0.3;
+}
+
+.filter-item.current {
+    opacity: 1;
+}
+
 .color-item li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: #000;
@@ -195,13 +308,17 @@ a {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    list-style: none;
 }
 
 .btn {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    border: none;
+    cursor: pointer;
 }
+
 
 .price {
     font-size: 16px;
@@ -209,3 +326,26 @@ a {
     color: #000;
 
 }
+
+section ul {
+    list-style: none;
+}
+
+.section-num{
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    opacity: 0.3;
+}
+
+.section-num.current {
+    opacity: 1;
+}
+
+.section-btn {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+
+
