@@ -234,6 +234,7 @@
         </div>
       </section>
       <section class="partners">
+       <div class="container">
         <ul>
           <li>
             <a href="#">
@@ -256,6 +257,7 @@
             </a>
           </li>
         </ul>
+    </div>
       </section>
 
       <section>
@@ -398,48 +400,50 @@
     </div>
       </section>
     </footer>
-    <section>
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль</p>
+    <section class="modal-login" style="display: none">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <p class="visually-hidden">Введите свой логин и пароль</p>
       <form
         class="login-form"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
+      <div class="login-email">
         <p>
-          <label for="login-user">Ваше имя</label>
+          <label class="login-user" for="login-user">Ваше имя:<br></label>
           <input
             id="login-user"
             class="login-icon-user"
             type="text"
             name="login-user"
-            placeholder="Имя и фамилия"
+            placeholder=" Имя и фамилия"
           />
         </p>
         <p>
-          <label for="email-user">Ваш e-mail</label>
+          <label for="email-user">Ваш e-mail:<br></label>
           <input
             id="email-user"
             class="login-icon-email"
             type="text"
             name="email-user"
-            placeholder="email@example.com"
+            placeholder=" email@example.com"
           />
         </p>
-        <p>
+    </div>
+        <p class="text-user">
           <label for="text-user">Текст письма:</label>
           <textarea
             id="text-user"
-            placeholder="В свободной форме"
+            placeholder=" В свободной форме"
             cols="100"
             rows="10"
           ></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="login-submit" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <section class="modal-map">
+    <section class="modal-map" style="display: none">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img
         src="img/map-big.png"
