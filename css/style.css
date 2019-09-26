@@ -167,46 +167,34 @@ input {
     margin-left: 20px;
 }
 
-.slider {
+.slide {
     display: flex;
-    margin-left: 90px;
-    margin-top: -150px;
-    z-index: 100;
-    position: absolute;
 }
 
-.slider-num {
+
+
+.slide-num {
     font-size: 179.2px;
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     position: absolute;
-    z-index: 10;
-    margin-left: 940px;
-    margin-top: -85px;
+}
+
+.slide-info {
+    margin: 0 auto;
 }
 
 
-
-.slider-title {
+.slide-title {
     font-size: 47px;
     font-weight: 800;
     color: #000;
     line-height: 56px;
-    position: absolute;
-    z-index: 5;
-    margin-left: 600px;
-    margin-top: -70px;
+
 }
 
-.slider-content {
-    margin-left: 590px;
-    margin-top: 35px;
-    z-index: 5;
-    position: absolute;
-}
-
-.slider-text {
+.slide-text {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -216,28 +204,24 @@ input {
     height: 70px;
     padding: 10px;
     margin-bottom: 50px;
-    /* margin-left: 590px;
-    margin-top: 50px;
-    z-index: 5;
-    position: absolute; */
+
 }
 
 
-.slider-btn {
+.slide-btn {
     margin-left: 55px;
 }
 
-.slider-item {
+.slide-item {
     display: flex;
     list-style: none;
     width: 450px;
     margin-top: 45px;
-    margin-left: -25px;
 }
 
 
 
-.slider-item p {
+.slide-item p {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
     font-weight: 300;
@@ -250,15 +234,15 @@ input {
 
 }
 
-.slider-item2 {
+.slide-item2 {
     margin-left: 25px;
 }
 
-.slider-item3 {
+.slide-item3 {
     margin-left: 30px;
 }
 
-.slider-item span {
+.slide-item span {
     font-size: 36px;
     font-weight: 300;
     color: #000;
@@ -288,6 +272,12 @@ input {
 }
 
 .services-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services-button {
     font-size: 18px;
     font-weight: 800;
     color: #000;
@@ -312,14 +302,25 @@ input {
     font-weight: 300;
     line-height: 30px;
     color: #464646;
+    width: 440px;
+    height: 100px;
 }
 
 .partners ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
+.about-contacts {
+    display: flex;
+}
 
 .about {
+    width: 50%;
+}
+
+.about h2 {
     font-size: 47px;
     font-weight: 800;
     color: #000;
@@ -338,9 +339,11 @@ input {
     color: #000;
 }
 
-
-
 .contact {
+    width: 50%;
+}
+
+.contact h2 {
     font-size: 47px;
     font-weight: 800;
     color: #000;
@@ -371,11 +374,21 @@ input {
 
 /*  footer  */
 .footer {
-    background: url("../img/footer-bg.png") center no-repeat;
+    background-color: #464646;
+    width: 100%;
+    height: 324px;
 }
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .footer-nav {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-nav a {
@@ -387,10 +400,12 @@ input {
 
 .footer-user {
     list-style: none;
+    display: flex;
 }
 
 .social {
     list-style: none;
+    display: flex;
 }
 
 .footer-user a {
@@ -443,22 +458,57 @@ input {
     opacity: 0.3;
 }
 
-.filter {
-    background-color: #eee;
-    background: url("../img/filter-bg.png")left no-repeat;
-}
-
 .cat-nav {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .cat-nav h2 {
-    display: flex;
     background-color: #dcdcdc;
-    width: 100%;
-    height: 70px;
-    padding: 20px 230px;
+
 }
+
+.criteria-product {
+    display: flex;
+}
+
+.criteria {
+    background-color: #ebebeb;
+    width: 470px;
+    height: 1220px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.select-page {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    width: 760px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.select-num {
+    display: flex;
+}
+
+
+
 
 .filter-title {
     font-size: 18px;
@@ -472,6 +522,7 @@ input {
     font-weight: 300;
     color: #000;
     opacity: 0.3;
+    display: flex;
 }
 
 .filter-item.current {
@@ -491,6 +542,7 @@ input {
     font-weight: 800;
     color: #000;
     list-style: none;
+    width: 360px;
 }
 
 .btn {
