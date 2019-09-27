@@ -23,13 +23,10 @@ html {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
-        url("../fonts/gilroyextrabold.woff") format('woff');
+    src: url("../fonts/gilroyextrabold.woff2") format('woff2'), url("../fonts/gilroyextrabold.woff") format('woff');
     font-weight: 800;
-
     font-family: 'Gilroy';
-    src: url("../fonts/gilroylight.woff2") format('woff2'),
-        url("../fonts/gilroylight.woff") format('woff');
+    src: url("../fonts/gilroylight.woff2") format('woff2'), url("../fonts/gilroylight.woff") format('woff');
     font-weight: 300;
 }
 
@@ -44,14 +41,14 @@ html {
     overflow: hidden;
 }
 
-
-
 a {
     text-decoration: none;
     color: #000;
 }
 
+
 /*  header  */
+
 .header {
     /* background: url("../img/header-bg.png") center no-repeat; */
     background-color: #f7e296;
@@ -69,7 +66,6 @@ a {
     margin-top: -25px;
     position: absolute;
     z-index: 1;
-
 }
 
 input {
@@ -80,13 +76,11 @@ input {
     color: #000;
 }
 
-
 .site-search {
     list-style: none;
     display: flex;
     margin-left: 25px;
 }
-
 
 .user-navigation {
     display: flex;
@@ -97,8 +91,6 @@ input {
 .search-img {
     margin-right: 12px;
 }
-
-
 
 .user-enter {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -117,7 +109,6 @@ input {
     margin-right: 10px;
 }
 
-
 .user-compare {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
@@ -126,7 +117,6 @@ input {
     list-style: none;
     display: flex;
     margin-left: 170px;
-
 }
 
 .compare-img {
@@ -163,6 +153,8 @@ input {
     padding-top: 5px;
 }
 
+
+
 .nav-item1 {
     margin-left: 20px;
 }
@@ -170,8 +162,6 @@ input {
 .slide {
     display: flex;
 }
-
-
 
 .slide-num {
     font-size: 179.2px;
@@ -185,13 +175,12 @@ input {
     margin: 0 auto;
 }
 
-
 .slide-title {
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     color: #000;
     line-height: 56px;
-
 }
 
 .slide-text {
@@ -204,12 +193,24 @@ input {
     height: 70px;
     padding: 10px;
     margin-bottom: 50px;
-
 }
 
-
-.slide-btn {
+.link-btn {
     margin-left: 55px;
+    background-color: #f0c52e;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 220px;
+    height: 8px;
+}
+
+.slider-btn {
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
 
 .slide-item {
@@ -220,18 +221,14 @@ input {
 }
 
 
-
 .slide-item p {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
     font-weight: 300;
     color: #464646;
     line-height: 20px;
-
-
     width: 135px;
     height: 75px;
-
 }
 
 .slide-item2 {
@@ -255,15 +252,39 @@ input {
     justify-content: space-between;
 }
 
-.category-item img {
+
+.category-img {
     background-color: #f7e296;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.category-img:hover {
+    background-color: #f0c52e;
+}
+
+.category p {
+    width: 160px;
+}
+
 
 .category-text {
     font-size: 18px;
     font-weight: 800;
     color: #000;
 }
+
+
+
+
+/* SERVICES */
+
+
+
 
 .services {
     background-color: #e5e5e5;
@@ -274,7 +295,6 @@ input {
 .services-item {
     display: flex;
     justify-content: space-between;
-
 }
 
 .services-button {
@@ -289,12 +309,18 @@ input {
     color: #f7e184;
 }
 
+.services-description {
+    width: 450px;
+}
+
 .services-title {
     font-size: 47px;
     font-weight: 800;
     color: #000;
     line-height: 48px;
 }
+
+
 
 .services-text {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -371,12 +397,38 @@ input {
 }
 
 
+/*  FOOTER  */
 
-/*  footer  */
 .footer {
     background-color: #464646;
     width: 100%;
     height: 324px;
+}
+
+.footer-logo {
+    margin-top: 60px;
+}
+
+.footer-address {
+    margin-top: 25px;
+    position: relative;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.footer-address:after {
+    margin-top: 85px;
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 8px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #f0c52e;
+
 }
 
 .footer-item {
@@ -384,11 +436,12 @@ input {
     justify-content: space-between;
 }
 
-
 .footer-nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 440px;
+    margin-top: 140px;
 }
 
 .footer-nav a {
@@ -401,11 +454,21 @@ input {
 .footer-user {
     list-style: none;
     display: flex;
+    margin-top: 70px;
+}
+
+.footer-phone {
+    margin-top: 50px;
+    margin-left: 230px;
 }
 
 .social {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 70px;
+    margin-left: 145px;
 }
 
 .footer-user a {
@@ -413,16 +476,17 @@ input {
     font-size: 15px;
     font-weight: 300;
     color: #fff;
+    margin-left: 40px;
 }
 
-.footer-address {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    color: #fff;
+.footer-user img {
+    margin-right: 8px;
 }
 
-/*  catalog  */
+
+
+
+/*  CATALOG  */
 
 .catalog-header {
     background-color: #f7e296;
@@ -461,12 +525,10 @@ input {
 .cat-nav {
     display: flex;
     justify-content: space-between;
-
 }
 
 .cat-nav h2 {
     background-color: #dcdcdc;
-
 }
 
 .criteria-product {
@@ -484,7 +546,21 @@ input {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+.product-btn {
+    list-style: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
 
+.product-filter {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ebebeb;
+    width: 100%;
+    align-items: center;
+    height: 70px;
 }
 
 .catalog-list {
@@ -492,7 +568,6 @@ input {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 
 .select-page {
     display: flex;
@@ -506,9 +581,6 @@ input {
 .select-num {
     display: flex;
 }
-
-
-
 
 .filter-title {
     font-size: 18px;
@@ -551,14 +623,15 @@ input {
     color: #000;
     border: none;
     cursor: pointer;
+    background-color: #f0c52e;
+    width: 220px;
+    height: 8px;
 }
-
 
 .price {
     font-size: 16px;
     font-weight: 300;
     color: #000;
-
 }
 
 section ul {
@@ -593,7 +666,6 @@ section ul {
     box-shadow: 0 0 5px;
 }
 
-
 .login-email {
     display: flex;
     padding: 0 70px;
@@ -616,9 +688,7 @@ section ul {
     padding: 0 70px;
 }
 
-
 .modal-map {
     width: 960px;
     height: 560px;
 }
-
