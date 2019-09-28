@@ -20,7 +20,7 @@
                         <li>
                             <form action="https://echo.htmlacademy.ru" method="POST">
                                 <label for="site-search"> <img class="search-img" src="img/svg-device/search.svg" alt="Поиск" /> </label>
-                                <input type="search" name="search" id="site-search" placeholder="Поиск по сайту" /> </form>
+                                <input class="header-search" type="search" name="search" id="site-search" placeholder="Поиск по сайту" /> </form>
                         </li>
                     </ul>
                     <ul class="user-enter">
@@ -67,30 +67,36 @@
                         <p>
                             <label for="price">Стоимость</label>
                         </p>
-                        <input type="range" id="price" name="price" min="0" max="10000" step="1" />
-                        <!-- <output name="price"></output> -->
+                        <input class="visually-hidden" type="range" id="price" name="price" min="0" max="10000" step="1" />
+                      <div class="range1">
+                        <div id='id66' class="range">
+                        <div id='id66b' class='range-between' style='width:100px;'></div>
+                            <button id='id661' class="range-button_1" style='margin-left:0px;'></button>
+                            <button id='id662' class="range-button_2" style='margin-left:100px;'></button>
+                      </div>
+                    </div>
                         <h4 class="filter-title">Цвет</h4>
                         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
                             <ul class="color-item">
                                 <li>
-                                    <input id="color-item-black" type="checkbox" name="color-item" />
-                                    <label for="color-item-black">Черный</label>
+                                    <input class="visually-hidden" id="color-item-black" type="checkbox" name="color-item" />
+                                    <label class="color-checkbox" for="color-item-black">Черный</label>
                                 </li>
                                 <li>
-                                    <input id="color-item-white" type="checkbox" name="color-item" />
-                                    <label for="color-item-white">Белый</label>
+                                    <input class="visually-hidden" id="color-item-white" type="checkbox" name="color-item" />
+                                    <label class="color-checkbox" for="color-item-white">Белый</label>
                                 </li>
                                 <li>
-                                    <input id="color-item-Blue" type="checkbox" name="color-item" />
-                                    <label for="color-item-Blue">Синий</label>
+                                    <input class="visually-hidden" id="color-item-Blue" type="checkbox" name="color-item" />
+                                    <label class="color-checkbox" for="color-item-Blue">Синий</label>
                                 </li>
                                 <li>
-                                    <input id="color-item-red" type="checkbox" name="color-item" />
-                                    <label for="color-item-red">Красный</label>
+                                    <input class="visually-hidden" id="color-item-red" type="checkbox" name="color-item" />
+                                    <label class="color-checkbox" for="color-item-red">Красный</label>
                                 </li>
                                 <li>
-                                    <input id="color-item-Pink" type="checkbox" name="color-item" />
-                                    <label for="color-item-Pink">Розовый</label>
+                                    <input class="visually-hidden" id="color-item-Pink" type="checkbox" name="color-item" />
+                                    <label class="color-checkbox" for="color-item-Pink">Розовый</label>
                                 </li>
                             </ul>
                         </form>
@@ -98,12 +104,12 @@
                         <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
                             <ul class="color-item">
                                 <li>
-                                    <input id="Bluetooth-yes" type="radio" name="bluetooth" />
-                                    <label for="Bluetooth-yes">Есть</label>
+                                    <input class="visually-hidden" id="Bluetooth-yes" type="radio" name="bluetooth" />
+                                    <label class="bluetooth" for="Bluetooth-yes">Есть</label>
                                 </li>
                                 <li>
-                                    <input id="Bluetooth-no" type="radio" name="bluetooth" />
-                                    <label for="Bluetooth-no"> Нет</label>
+                                    <input class="visually-hidden" id="Bluetooth-no" type="radio" name="bluetooth" />
+                                    <label class="bluetooth" for="Bluetooth-no"> Нет</label>
                                 </li>
                             </ul>
                             <button class="btn" type="button">ПОКАЗАТЬ</button>
@@ -120,8 +126,12 @@
                             </ul>
                         
                         <div>
-                            <button class="product-btn" type="button"> <img src="img/svg-device/icon-up-dir.svg" alt="icon-up" /> </button>
-                            <button class="product-btn" type="button"> <img src="img/svg-device/icon-down-dir.svg" alt="icon-up" /> </button>
+                           <a class="product-btn" href="#">
+                               <img src="img/svg-device/icon-up-dir.svg" alt="icon-up" />
+                           </a>
+                           <a class="product-btn" href="#">
+                            <img src="img/svg-device/icon-down-dir.svg" alt="icon-down" />
+                           </a>
                         </div>
                     </div>
                         <ul class="catalog-list">
@@ -143,15 +153,11 @@
                             </li>
                         </ul>
                         <div class="select-page">
-                            <ul>
-                                <li><a class="section-btn" href="#">Назад</a></li>
-                            </ul>
                             <ul class="select-num">
+                                <li><a class="section-btn" href="#">Назад</a></li>
                                 <li><a class="section-num current" href="#">1</a></li>
                                 <li><a class="section-num" href="#">2</a></li>
                                 <li><a class="section-num" href="#">3</a></li>
-                            </ul>
-                            <ul>
                                 <li><a class="section-btn" href="#">Вперед</a></li>
                             </ul>
                         </div>
