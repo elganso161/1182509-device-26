@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet" /> -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" /> </head>
 
@@ -20,7 +20,9 @@
                         <li>
                             <form action="https://echo.htmlacademy.ru" method="POST">
                                 <label for="site-search"> <img class="search-img" src="img/svg-device/search.svg" alt="Поиск" /> </label>
-                                <input class="header-search" type="search" name="search" id="site-search" placeholder="Поиск по сайту" /> </form>
+                                <input class="header-search" type="search" name="search" id="site-search" placeholder="Поиск по сайту" />
+                                <button class="search-button" type="submit">Найти</button>
+                            </form>
                         </li>
                     </ul>
                     <ul class="user-enter">
@@ -102,17 +104,21 @@
                                 <button class="slider-btn"> <img src="img/svg-device/slider-button-empty.svg" width="12px" height="12px" alt="" /> </button>
                             </div>
                         </div>
-                        <ul class="slide-item">
-                            <li>
-                                <p class="slide-item1"><span>8,5 м</span>Длина палки</p>
-                            </li>
-                            <li>
-                                <p class="slide-item2"><span>5 кг</span>Вес палки</p>
-                            </li>
-                            <li>
-                                <p class="slide-item3"><span>Карбон</span>Материал</p>
-                            </li>
-                        </ul>
+                    <div class="slide-item">
+                        <table>
+                            <tr>
+                                <th class="slide-item-1">8,5 м</th>
+                                <th class="slide-item-1">5 кг</th>
+                                <th class="slide-item-1">Карбон</th>
+                            </tr>
+                            <tr>
+                                <td class="slide-item-2">Длина палки</td>
+                                <td class="slide-item-2">Вес палки</td>
+                                <td class="slide-item-2">Материал</td>
+                            </tr>
+                        </table>
+                    </div>
+
                     </div>
                 </div>
             </div>
