@@ -21,40 +21,27 @@ html {
     margin: 0 auto;
 }
 
-/* @font-face {
-    font-family: 'Gilroy';
-    src: url("../fonts/gilroyextrabold.woff2") format('woff2'), url("../fonts/gilroyextrabold.woff") format('woff');
-    font-weight: 800;
-}
- @font-face {
-    font-family: 'Gilroy';
-    src: url("../fonts/gilroylight.woff2") format('woff2'), url("../fonts/gilroylight.woff") format('woff');
-    font-weight: 300;
-} */
-
-
 
 @font-face {
     font-family:Gilroy;
     src:url(../fonts/gilroylight.woff2) format('woff2'),url(../fonts/gilroylight.woff) format('woff');
     font-weight:400;
-    font-style:normal}
+    font-style:normal;}
 @font-face {
     font-family:Gilroy;
     src:url(../fonts/gilroyextrabold.woff2) format('woff2'),url(../fonts/gilroyextrabold.woff) format('woff');
     font-weight:700;
-    font-style:normal}
+    font-style:normal;}
 @font-face {
     font-family:"Open Sans";
     src:url(../fonts/opensanslight.woff2) format('woff2'),url(../fonts/opensanslight.woff) format('woff');
     font-weight:400;
-    font-style:normal}
+    font-style:normal;}
 @font-face {
     font-family:"Open Sans";
     src:url(../fonts/opensans.woff2) format('woff2'),url(../fonts/opensans.woff) format('woff');
     font-weight:700;
-    font-style:normal
-}
+    font-style:normal;}
 
 .visually-hidden {
     position: absolute;
@@ -106,10 +93,11 @@ a {
 .header-search {
     background-color: transparent;
     border: 0px solid;
-    height: 20px;
     width: 360px;
     color: #000;
     opacity: 0.3;
+    padding-left: 50px;
+    height: 50px;
 
 }
 
@@ -151,18 +139,20 @@ a {
 .site-search {
     list-style: none;
     display: flex;
-
     width: 360px;
+    width: auto;
 }
 
 .search-form {
+    display: flex;
+    position: relative;
     width: 440px;
 }
 
 .user-navigation {
     display: flex;
-    padding-top: 34px;
-    /* align-items: center; */
+    padding-top: 15px;
+    align-items: center;
     opacity: 1;
 }
 
@@ -175,8 +165,13 @@ a {
 }
 
 .search-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     cursor: pointer;
-    margin-right: 12px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .user-enter {
@@ -186,11 +181,10 @@ a {
     color: #000;
     list-style: none;
     display: flex;
+    margin-left: 85px;
 }
 
-.login-link {
-    margin-left: 180px;
-}
+
 
 .login-img {
     margin-right: 10px;
@@ -346,14 +340,18 @@ a {
 
 
 
-
-
-
-
-
-.slide {
+.slide-1 {
     display: flex;
+}
 
+.slide-2 {
+    display: flex;
+    display: none;
+}
+
+.slide-3 {
+    display: flex;
+    display: none;
 }
 
 .slide-num {
@@ -369,7 +367,6 @@ a {
 }
 
 .slide-title {
-    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     color: #000;
@@ -520,6 +517,47 @@ a {
     list-style: none;
     border: none;
 }
+
+
+.sevices-tab {
+    padding: 10px;
+}
+
+
+.services-link {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    padding: 0 44px;
+    width: 220px;
+    letter-spacing: 0.2em;
+}
+
+.services-link:after {
+    content: "";
+    background-color: #f0c52e;
+    width: 220px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-top: 7px;
+    transition: 0.3s;
+}
+
+
+.services-link:hover:after {
+    transition: 0.3s;
+    transform: scaleY(5);
+}
+
+
 
 .services .current {
     color: #f7e184;
@@ -938,38 +976,7 @@ input:checked + .bluetooth::after{
     width: 360px;
 }
 
-.btn {
-    font-size: 18px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #000;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    opacity: 1;
-    padding: 0 44px;
-    width: 220px;
-    letter-spacing: 0.2em;
-}
 
-.btn:after {
-    content: "";
-    background-color: #f0c52e;
-    width: 220px;
-    height: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    margin-top: 7px;
-    transition: 0.3s;
-}
-
-
-.btn:hover:after {
-    transition: 0.3s;
-    transform: scaleY(5);
-}
 
 
 .price {
