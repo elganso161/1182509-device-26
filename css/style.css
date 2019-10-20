@@ -236,7 +236,6 @@ a {
 }
 
 
-
 .user-compare {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
@@ -390,6 +389,19 @@ a {
     position: absolute;
     margin-top: 20px;
     margin-left: 370px;
+}
+
+.slide-num::before {
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+    margin-left: -375px;
+    margin-top: -20px;
 }
 
 .slide-info {
@@ -835,7 +847,6 @@ a {
 .footer-user {
     list-style: none;
     display: flex;
-    ;
 }
 
 
@@ -875,6 +886,7 @@ a {
 
     align-items: center;
     justify-content: center;
+    margin-left: 60px;
 }
 
 
@@ -917,7 +929,9 @@ a {
 
 .color-checkbox {
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .color-checkbox::before {
@@ -971,11 +985,47 @@ input:checked+.bluetooth::after {
     background-size: 100%;
 }
 
+.show-btn {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    padding: 0 44px;
+    width: 220px;
+    letter-spacing: 0.2em;
+    background: none;
+    z-index: 1;
+}
+
+
+.show-btn::after {
+    content: "";
+    background-color: #f0c52e;
+    width: 220px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 6px;
+    transition: 0.3s;
+}
+
+.show-btn:hover::after {
+    transition: 0.3s;
+    transform: scaleY(5);
+}
+
 .catalog-header {
     background-color: #f7e296;
     width: 1160px;
     height: 185px;
     margin: 40px auto;
+    position: relative;
 }
 
 .title {
@@ -1016,6 +1066,7 @@ input:checked+.bluetooth::after {
 
 .criteria-product {
     display: flex;
+
 }
 
 .criteria {
@@ -1025,10 +1076,22 @@ input:checked+.bluetooth::after {
     margin: 0 auto;
 }
 
+.criteria h2 {
+    font-size: 16px;
+    margin-left: 60px;
+    text-transform: uppercase;
+}
+
+.criteria p {
+    margin-left: 60px;
+}
+
+
 .product {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+
 }
 
 .product-btn {
@@ -1040,12 +1103,19 @@ input:checked+.bluetooth::after {
 
 .product-filter {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #ebebeb;
     width: 100%;
     align-items: center;
     height: 70px;
 }
+
+.product-filter h3 {
+    font-size: 16px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
 
 .catalog-list {
     display: flex;
@@ -1070,6 +1140,16 @@ input:checked+.bluetooth::after {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    margin-left: 60px;
+}
+
+
+.filter-line {
+    width: 201px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 30px;
+    margin-left: 60px;
 }
 
 .filter-item {
@@ -1085,12 +1165,17 @@ input:checked+.bluetooth::after {
     opacity: 1;
 }
 
+.color-item {
+    margin-left: 20px;
+}
+
 .color-item li {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     color: #000;
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .catalog-item {
@@ -1101,7 +1186,91 @@ input:checked+.bluetooth::after {
     width: 360px;
 }
 
+.catalog-img {
+    position: relative;
+}
 
+
+.catalog-img a {
+    cursor: default;
+}
+
+
+.catalog-image {
+    opacity: 1;
+    position: relative;
+}
+
+.catalog-image:hover {
+    opacity: 0.7;
+}
+
+
+.catalog-image:hover .catalog-add, .catalog-add:hover {
+    display: block;
+}
+
+
+
+.catalog-add {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.add-to-cart {
+    width: 200px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-to-cart::after {
+    content: "";
+    background-color: #f0c52e;
+    width: 200px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+
+.add-to-cart:hover:after {
+    transition: 0.3s;
+    transform: scaleY(5);
+}
+
+
+
+.add-to-compare {
+    font-size: 13px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.add-to-compare:hover {
+    opacity: 1;
+}
+
+.add-to-compare:active {
+    opacity: 0.2;
+}
 
 
 .price {
@@ -1135,11 +1304,16 @@ section ul {
 /* MODAL */
 
 .modal-login {
+    position: absolute;
+    top: 1100px;
+    left: 165px;
+    z-index: 1;
     display: flex;
     width: 960px;
     height: 553px;
     margin: 0 auto;
     box-shadow: 0 0 5px;
+    background-color: #fff;
 }
 
 .login-email {
@@ -1222,6 +1396,35 @@ section ul {
     opacity: 0.3;
 }
 
+
+
+.modal-close-map {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    opacity: 0.5;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    z-index: 1;
+    top: 10;
+    left: 1;
+    margin-top: 10px;
+    margin-left: 890px;
+}
+
+.modal-close-map:hover {
+    opacity: 1;
+}
+
+.modal-close-map:active {
+    opacity: 0.3;
+}
+
 .login-submit {
     margin-top: 55px;
     margin-left: 70px;
@@ -1236,6 +1439,7 @@ section ul {
     padding: 0 44px;
     width: 220px;
     letter-spacing: 0.2em;
+    background: none;
 }
 
 .login-submit::after {
@@ -1247,7 +1451,7 @@ section ul {
     top: 0;
     left: 0;
     z-index: -1;
-    margin-top: 7px;
+    margin-top: 5px;
     transition: 0.3s;
 }
 
@@ -1257,6 +1461,10 @@ section ul {
 }
 
 .modal-map {
+    position: absolute;
+    top: 1880px;
+    left: 165px;
+    z-index: 1;
     width: 960px;
     height: 560px;
 }
