@@ -82,8 +82,8 @@ a {
     display: flex;
     width: 163px;
     height: 35px;
-    margin-left: 57px;
-    margin-top: -25px;
+    margin-left: 60px;
+    margin-top: -20px;
     position: absolute;
     z-index: 1;
     opacity: 1;
@@ -148,6 +148,8 @@ a {
     display: flex;
     width: 360px;
     width: auto;
+    margin-top: 20px;
+    margin-left: 9px;
 }
 
 .search-form {
@@ -188,7 +190,7 @@ a {
     color: #000;
     list-style: none;
     display: flex;
-    margin-left: 85px;
+    margin-left: 75px;
 }
 
 
@@ -203,7 +205,7 @@ a {
     height: 150px;
     background-color: #f7e296;
     position: absolute;
-    margin-top: 35px;
+    margin-top: 32px;
     left: 0;
     z-index: 5;
 }
@@ -261,28 +263,32 @@ a {
 .nav-item1 {
     width: 220px;
     margin-left: 20px;
+
 }
 
 
 .nav-item:hover .catalog-menu,
 .catalog-menu:hover {
     display: flex;
+
 }
 
 
-/* .nav-item1:before,
+.nav-item1:before,
 .nav-item1:after {
     content: "";
     width: 16px;
     height: 2px;
     position: absolute;
     background-color: #b8a974;
-    top: 125px;
-    left: 230px;
+    top: 122px;
+    left: 290px;
     z-index: 1;
-} */
+}
 
-
+.nav-item1:before {
+    transform: rotate(90deg);
+}
 
 .site-navigation {
     display: flex;
@@ -359,6 +365,11 @@ a {
     margin-bottom: 90px;
 }
 
+.slide-img {
+    margin-top: -40px;
+    margin-left: -10px;
+}
+
 .slide-2 {
     display: none;
     /* display: flex;
@@ -388,7 +399,7 @@ a {
     text-transform: uppercase;
     position: absolute;
     margin-top: 20px;
-    margin-left: 370px;
+    margin-left: 330px;
 }
 
 .slide-num::before {
@@ -400,12 +411,13 @@ a {
     width: 100px;
     height: 7px;
     background-color: #fff;
-    margin-left: -375px;
-    margin-top: -20px;
+    margin-left: -327px;
+    margin-top: -23px;
 }
 
 .slide-info {
-    margin: 0 auto;
+    margin-left: 125px;
+
 }
 
 .slide-title {
@@ -413,6 +425,7 @@ a {
     font-weight: 800;
     color: #000;
     line-height: 56px;
+    margin-bottom: 5px;
 }
 
 .slide-text {
@@ -421,10 +434,10 @@ a {
     font-weight: 300;
     color: #464646;
     line-height: 30px;
-    width: 500px;
+    width: 480px;
     height: 70px;
-    padding: 10px;
-    margin-bottom: 50px;
+
+    margin-bottom: 45px;
 }
 
 .slide-btn {
@@ -444,6 +457,7 @@ a {
     padding: 0 44px;
     width: 220px;
     letter-spacing: 0.2em;
+    margin-bottom: 10px;
 }
 
 
@@ -480,6 +494,8 @@ a {
     text-align: left;
 }
 
+
+
 .slide-item-1 {
     font-size: 36px;
     font-weight: 300;
@@ -487,20 +503,24 @@ a {
     line-height: 48px;
 }
 
+
 .slide-item-2 {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
     font-weight: 300;
     color: #464646;
     line-height: 20px;
-    width: 135px;
-    height: 75px;
+    width: 150px;
+    height: 30px;
+    padding: 0;
 }
 
 
 
 .category {
-    margin-bottom: 150px;
+    margin-top: 105px;
+    margin-bottom: 167px;
+    margin-left: -37px;
 }
 
 .category-item {
@@ -530,6 +550,7 @@ a {
 
 
 .category-text {
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
@@ -554,22 +575,50 @@ a {
     justify-content: space-between;
 }
 
+.services-item::after {
+    position: absolute;
+    content: "";
+    top: 10;
+    left: 455px;
+    margin-top: -100px;
+    z-index: 1;
+    background: #000;
+    width: 8px;
+    height: 320px;
+}
+
 .services-button {
     font-size: 18px;
     font-weight: 800;
     color: #000;
     list-style: none;
     border: none;
+    width: 300px;
+    margin-top: -15px;
+    margin-left: -100px;
 }
 
 
 
 .sevices-tab {
-    margin: 20px auto;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.sevices-tab.current {
+    width: 280px;
+    height: 40px;
+    background-color: #000;
+    color: #f7e184;
+    margin-left: 60px;
 }
 
 
 .services-link {
+    width: 160px;
     font-size: 18px;
     font-weight: 800;
     text-transform: uppercase;
@@ -582,6 +631,11 @@ a {
     z-index: 1;
 }
 
+
+
+
+
+
 .services-link::after {
     content: "";
     background-color: #f0c52e;
@@ -589,10 +643,11 @@ a {
     height: 8px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     z-index: -1;
     margin-top: 7px;
     transition: 0.3s;
+    margin-left: -80px;
 }
 
 
@@ -602,9 +657,8 @@ a {
 
 
 
-.services .current {
-    color: #f7e184;
-}
+
+
 
 .services-description {
     width: 450px;
@@ -643,6 +697,23 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+
+.partners-logo-1:hover {
+    background: url("..//img/dji-hover.png") center no-repeat;
+}
+
+.partners-logo-2:hover {
+    background: url("..//img/sp-gadgets-hover.png") center no-repeat;
+}
+
+.partners-logo-3:hover {
+    background: url("..//img/gopro-hover.png") center no-repeat;
+}
+
+.partners-logo-4:hover {
+    background: url("..//img/vive-hover.png") center no-repeat;
 }
 
 
@@ -866,17 +937,14 @@ a {
 }
 
 .footer-user img {
-    margin-right: 8px;
+    margin-right: 10px;
+    margin-left: 43px;
 }
 
 
 
 
 /*  CATALOG  */
-
-
-
-
 
 
 
@@ -1070,10 +1138,22 @@ input:checked+.bluetooth::after {
 }
 
 .criteria {
+    position: relative;
     background-color: #ebebeb;
     width: 470px;
     height: 1220px;
     margin: 0 auto;
+}
+
+.criteria::before {
+    content: "";
+    position: absolute;
+    background: #ebebeb;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .criteria h2 {
@@ -1108,6 +1188,18 @@ input:checked+.bluetooth::after {
     width: 100%;
     align-items: center;
     height: 70px;
+    position: relative;
+}
+
+.product-filter::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #ebebeb;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
 }
 
 .product-filter h3 {
@@ -1134,6 +1226,10 @@ input:checked+.bluetooth::after {
 
 .select-num {
     display: flex;
+}
+
+.filter {
+    overflow: hidden;
 }
 
 .filter-title {
@@ -1206,7 +1302,7 @@ input:checked+.bluetooth::after {
 }
 
 
-.catalog-image:hover .catalog-add, .catalog-add:hover {
+.catalog-item:hover .catalog-add {
     display: block;
 }
 
@@ -1335,7 +1431,7 @@ section ul {
 .login-icon-user:focus {
     border: 3px solid #f7e296;
     background-color: #fff;
-    outline:none;
+    outline: none;
 }
 
 .login-icon-email {
@@ -1349,7 +1445,7 @@ section ul {
 .login-icon-email:focus {
     border: 3px solid #f7e296;
     background-color: #fff;
-    outline:none;
+    outline: none;
 }
 
 .text-user {
@@ -1366,7 +1462,7 @@ section ul {
 .text-user textarea:focus {
     border: 3px solid #f7e296;
     background-color: #fff;
-    outline:none;
+    outline: none;
 }
 
 .modal-close {
