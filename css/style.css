@@ -576,16 +576,18 @@ a {
 
 
 .services-button {
+    padding: 0;
+    margin-top: -100px;
+    margin-left: 0;
+    width: 284px;
+    padding-top: 80px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
     list-style: none;
     border: none;
-    width: 250px;
     height: 320px;
-    margin-left: 35px;
     margin-right: 118px;
-    margin-top: -100px;
     border-right: 8px #000 solid;
 }
 
@@ -599,15 +601,26 @@ a {
 }
 
 
+.sevices-tab.current {
+    display: flex;
+    align-items: center;
+}
+
+
 .current a::after {
     display: none;
 }
 
 .current a::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0;
+    z-index: -1;
     width: 280px;
     height: 40px;
     background: #000;
-    color: #f7e184;
+    color: #fff;
 }
 
 
