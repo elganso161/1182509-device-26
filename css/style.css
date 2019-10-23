@@ -83,7 +83,7 @@ a {
     width: 163px;
     height: 35px;
     margin-left: 60px;
-    margin-top: -20px;
+    margin-top: -19px;
     position: absolute;
     z-index: 1;
     opacity: 1;
@@ -105,7 +105,14 @@ a {
     opacity: 0.3;
     padding-left: 50px;
     height: 50px;
+}
 
+.header-search[placeholder] {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #000;
+    opacity: 0.3;
 }
 
 .header-search:focus {
@@ -163,6 +170,7 @@ a {
     padding-top: 15px;
     align-items: center;
     opacity: 1;
+    margin-bottom: 12px;
 }
 
 .user-navigation a:hover {
@@ -173,6 +181,7 @@ a {
     opacity: 0.3;
 }
 
+
 .search-img {
     position: absolute;
     top: 0;
@@ -180,7 +189,7 @@ a {
     z-index: 1;
     cursor: pointer;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 14px;
 }
 
 .user-enter {
@@ -190,7 +199,7 @@ a {
     color: #000;
     list-style: none;
     display: flex;
-    margin-left: 75px;
+    margin-left: 71px;
 }
 
 
@@ -245,11 +254,11 @@ a {
     color: #000;
     list-style: none;
     display: flex;
-    margin-left: 170px;
+    margin-left: 178px;
 }
 
 .compare-img {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .user-cart {
@@ -281,8 +290,8 @@ a {
     height: 2px;
     position: absolute;
     background-color: #b8a974;
-    top: 126px;
-    left: 290px;
+    top: 123px;
+    left: 291px;
     z-index: 1;
 }
 
@@ -292,7 +301,8 @@ a {
 
 .site-navigation {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin: 0;
 }
 
 .site-navigation a:hover {
@@ -310,39 +320,39 @@ a {
 }
 
 .nav-item1 {
+    margin-left: 19px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    margin-right: 321px;
 }
 
 
 .nav-item2 {
-    margin-left: 220px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    margin-right: 34px;
 }
 
 .nav-item3 {
-    margin-left: -50px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    margin-right: 108px;
 
 }
 
 .nav-item4 {
-    margin-right: 50px;
-
     font-size: 18px;
     font-weight: 800;
     color: #000;
@@ -360,7 +370,7 @@ a {
     top: 0;
     left: 0;
     z-index: 1;
-    margin-top: -110px;
+    margin-top: -111px;
     margin-left: 100px;
     margin-bottom: 90px;
 }
@@ -393,13 +403,13 @@ a {
 }
 
 .slide-num {
-    font-size: 179.2px;
+    font-size: 179px;
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 330px;
+    margin-top: 23px;
+    margin-left: 331px;
 }
 
 .slide-num::before {
@@ -411,8 +421,8 @@ a {
     width: 100px;
     height: 7px;
     background-color: #fff;
-    margin-left: -327px;
-    margin-top: -23px;
+    margin-left: -329px;
+    margin-top: -26px;
 }
 
 .slide-info {
@@ -425,7 +435,8 @@ a {
     font-weight: 800;
     color: #000;
     line-height: 56px;
-    margin-bottom: 5px;
+    margin-bottom: 19px;
+    letter-spacing: 0.014em;
 }
 
 .slide-text {
@@ -436,8 +447,8 @@ a {
     line-height: 30px;
     width: 480px;
     height: 70px;
-
-    margin-bottom: 45px;
+    /* letter-spacing: 0.005em; */
+    margin-bottom: 42px;
 }
 
 .slide-btn {
@@ -458,6 +469,7 @@ a {
     width: 220px;
     letter-spacing: 0.2em;
     margin-bottom: 10px;
+    margin-right: 175px;
 }
 
 
@@ -484,6 +496,7 @@ a {
     border: none;
     cursor: pointer;
     background: transparent;
+    margin-right: 5px;
 }
 
 .slide-item {
@@ -594,6 +607,8 @@ a {
 
 
 .sevices-tab {
+    display: flex;
+    align-items: center;
     width: 280px;
     height: 40px;
     text-align: center;
@@ -622,6 +637,11 @@ a {
     background: #000;
     color: #fff;
 }
+
+.current a {
+    color: #fff;
+}
+
 
 
 .services-link {
@@ -908,6 +928,11 @@ a {
     align-items: center;
     margin-bottom: 35px;
 }
+
+.footer-phone {
+    color: #fff;
+}
+
 
 .footer3 {
     display: flex;
