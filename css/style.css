@@ -532,8 +532,8 @@ a {
 
 .category {
     margin-top: 105px;
-    margin-bottom: 167px;
-    margin-left: -37px;
+    margin-bottom: 162px;
+    margin-left: -40px;
 }
 
 .category-item {
@@ -550,6 +550,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 
@@ -563,7 +564,6 @@ a {
 
 
 .category-text {
-    margin-top: 30px;
     font-size: 18px;
     font-weight: 800;
     color: #000;
@@ -693,6 +693,16 @@ a {
     margin-top: -65px;
 }
 
+
+.services-slide-2 {
+    display: none;
+}
+
+.services-slide-3 {
+    display: none;
+}
+
+
 .services-img {
     margin-top: 45px;
     margin-left: 115px;
@@ -719,8 +729,8 @@ a {
 }
 
 .partners {
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 95px;
+    margin-bottom: 85px;
 }
 
 .partners ul {
@@ -751,7 +761,7 @@ a {
     width: 80px;
     height: 7px;
     background-color: #000;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
 }
 
 .about-contacts {
@@ -767,7 +777,7 @@ a {
     font-size: 47px;
     font-weight: 800;
     color: #000;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .about-text {
@@ -775,18 +785,19 @@ a {
     font-size: 15px;
     font-weight: 300;
     color: #464646;
+    line-height: 30px;
 }
 
 .about-text p {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
 }
 
 .transport {
     font-size: 16px;
     font-weight: 800;
     color: #000;
-    margin-top: 80px;
-    margin-bottom: 75px;
+    margin-top: 75px;
+    margin-bottom: 73px;
     padding: 0;
 }
 
@@ -795,13 +806,13 @@ a {
 }
 
 .transport-img {
-    margin-right: 25px;
+    margin-right: 24px;
 }
 
 
 .contact {
     width: 50%;
-    margin-left: 35px;
+    margin-left: 38px;
 }
 
 .contact h2 {
@@ -815,8 +826,9 @@ a {
     font-size: 15px;
     font-weight: 300;
     color: #464646;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin-top: 56px;
+    margin-bottom: 40px;
+    line-height: 30px;
 }
 
 .contact img {
@@ -836,6 +848,7 @@ a {
     letter-spacing: 0.2em;
     z-index: 1;
     padding: 0 21px;
+    margin-left: 2px;
 }
 
 .info::after {
@@ -865,22 +878,24 @@ a {
     position: relative;
     opacity: 1;
     padding: 0 44px;
-    width: 220px;
+    width: 260px;
     letter-spacing: 0.2em;
     z-index: 1;
-    padding: 0 20px;
+    padding: 0 40px;
+    margin-top: 2px;
+    margin-left: 2px;
 }
 
 .communication::after {
     content: "";
     background-color: #f0c52e;
-    width: 220px;
+    width: 260px;
     height: 8px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    margin-top: 7px;
+    margin-top: 6px;
     transition: 0.3s;
 }
 
@@ -1115,7 +1130,7 @@ input:checked+.bluetooth::after {
     position: relative;
     opacity: 1;
     padding: 0 44px;
-    width: 220px;
+    width: 200px;
     letter-spacing: 0.2em;
     background: none;
     z-index: 1;
@@ -1126,7 +1141,7 @@ input:checked+.bluetooth::after {
 .show-btn::after {
     content: "";
     background-color: #f0c52e;
-    width: 220px;
+    width: 200px;
     height: 8px;
     position: absolute;
     top: 0;
@@ -1160,7 +1175,7 @@ input:checked+.bluetooth::after {
 
 .breadcrumbs {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
 }
 
 .breadcrumbs li {
@@ -1197,6 +1212,7 @@ input:checked+.bluetooth::after {
     width: 470px;
     height: 1290px;
     margin: 0 auto;
+    padding-right: 67px;
 }
 
 .criteria::before {
@@ -1217,6 +1233,7 @@ input:checked+.bluetooth::after {
     margin-bottom: 92px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    background-color: #dcdcdc;
 
 }
 
@@ -1229,7 +1246,6 @@ input:checked+.bluetooth::after {
 .product {
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0 auto; */
 
 }
 
@@ -1238,6 +1254,11 @@ input:checked+.bluetooth::after {
     border: none;
     background: transparent;
     cursor: pointer;
+    margin-left: 218px;
+}
+
+.product-btn-down {
+    margin-left: 5px;
 }
 
 .product-filter {
@@ -1262,11 +1283,16 @@ input:checked+.bluetooth::after {
 
 .product-filter h3 {
     font-size: 16px;
-    margin-left: 70px;
+    margin-left: 73px;
     margin-right: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
+
+.product-filter a {
+    margin-right: 10px;
+}
+
 
 
 .catalog-list {
@@ -1279,15 +1305,15 @@ input:checked+.bluetooth::after {
     background-color: #ebebeb;
     width: 780px;
     height: 70px;
-    margin-left: 100px;
+    margin-left: 72px;
 }
 
 .select-num {
     display: flex;
-    margin-top: 21px;
+
 }
 
-.filter {
+.form-filter {
     overflow: hidden;
 }
 
@@ -1297,7 +1323,7 @@ input:checked+.bluetooth::after {
     color: #000;
     margin-left: 60px;
     margin-top: 10px;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
 }
 
 
@@ -1327,7 +1353,7 @@ input:checked+.bluetooth::after {
 
 .color-item {
     margin-left: 20px;
-    margin-bottom: 43px;
+    margin-bottom: 49px;
 }
 
 .color-item li {
@@ -1345,7 +1371,8 @@ input:checked+.bluetooth::after {
     color: #000;
     list-style: none;
     width: 360px;
-    margin-left: 60px;
+    margin-bottom: 50px;
+
 }
 
 .catalog-img {
@@ -1361,6 +1388,7 @@ input:checked+.bluetooth::after {
 .catalog-image {
     opacity: 1;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .catalog-image:hover {
@@ -1380,12 +1408,20 @@ input:checked+.bluetooth::after {
     top: 0;
     left: 0;
     z-index: 1;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+
 }
 
 
 .add-to-cart {
     width: 200px;
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     border: none;
     outline: none;
@@ -1393,6 +1429,7 @@ input:checked+.bluetooth::after {
     cursor: pointer;
     position: relative;
 }
+
 
 .add-to-cart::after {
     content: "";
@@ -1480,6 +1517,8 @@ section ul {
     box-shadow: 0 0 5px;
     background-color: #fff;
 }
+
+
 
 .login-email {
     margin-top: 90px;
@@ -1626,6 +1665,7 @@ section ul {
 }
 
 .modal-map {
+    display: none;
     position: absolute;
     top: 1880px;
     left: 165px;
