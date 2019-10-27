@@ -28,11 +28,14 @@
                         </li>
                     </ul>
                     <ul class="user-enter">
-                        <li>
+                        <li class="main-user-name">
                             <a class="login-link" href="login.html"> 
                                 <img class="login-img" src="img/svg-device/user.svg" alt="Пользователь" />
-                                 Войти
+                                 Войти 
                             </a>
+                        </li>
+                        <li>
+                            <a class="main-user-exit">Выйти</a>
                         </li>
                     </ul>
                     <ul class="user-compare">
@@ -409,7 +412,7 @@
             
         </div>
     </footer>
-    <section class="modal-login" style="display: none;">
+    <section class="modal modal-login">
         <div class="container">
         <h2 class="visually-hidden">Личный кабинет</h2>
         <p class="visually-hidden">Введите свой логин и пароль</p>
@@ -439,6 +442,25 @@
             <p class="visually-hidden">Закрыть</p></button>
         <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул.Строителей 15, Москва" />
     </section>
+
+
+    <script>
+
+        var link = document.querySelector(".communication");
+
+        var popup = document.querySelector(".modal-login");
+        var close = document.querySelector("modal-close");
+
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+        });
+        close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        });
+
+    </script>
 </body>
 
 </html>
