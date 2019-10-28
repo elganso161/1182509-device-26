@@ -420,11 +420,11 @@
             <div class="login-email">
                 <button class="modal-close" type="button"><img src="img/modal-close.svg" alt=""><p class="visually-hidden">Закрыть</p></button>
                 <p>
-                    <label class="login-user" for="login-user"><b>Ваше имя:</b><br/></label>
+                    <label class="login-user" for="login-user" name="login"><b>Ваше имя:</b><br/></label>
                     <input id="login-user" class="login-icon-user" type="text" name="login-user" placeholder=" Имя и фамилия" /> 
                 </p>
                 <p>
-                    <label for="email-user"><b>Ваш e-mail:</b><br/></label>
+                    <label for="email-user" name="email"><b>Ваш e-mail:</b><br/></label>
                     <input id="email-user" class="login-icon-email" type="text" name="email-user" placeholder=" email@example.com" /> </p>
             </div>
             <p class="text-user">
@@ -447,17 +447,52 @@
     <script>
 
         var link = document.querySelector(".communication");
-
         var popup = document.querySelector(".modal-login");
-        var close = document.querySelector("modal-close");
+        var close = document.querySelector(".modal-close");
 
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=login]");
+        var login = popup.querySelector("[name=email]");
+
+        var isStorageSupport = true;
+        var storage = "";
+        try {
+            storage = localStorage.getItem("login");
+        } catch (err) {
+            isStorageSupport = false;
+        }
+
+        link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        
+        if (storage) {
+        login.value = storage;
+        email.focus();
+        } else {
+        login.focus();
+        }
         });
         close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
+        });
+        form.addEventListener("submit", function (evt) {
+            if (!login.value || !email.value) {
+        evt.preventDefault();
+        } else {
+            if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+        }
+        }
+            });
+            window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+        }
+        }
         });
 
     </script>

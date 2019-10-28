@@ -989,8 +989,13 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 440px;
+    width: 432px;
     align-items: center;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+
 }
 
 .footer-nav a {
@@ -1117,7 +1122,7 @@ input:checked+.color-checkbox::after {
 
 .bluetooth {
     position: relative;
-    padding-left: 30px;
+    padding: 2px 40px;
 }
 
 .bluetooth::before {
@@ -1151,12 +1156,13 @@ input:checked+.bluetooth::after {
     cursor: pointer;
     position: relative;
     opacity: 1;
-    padding: 0 44px;
+    padding: 0 40px;
     width: 200px;
     letter-spacing: 0.2em;
     background: none;
     z-index: 1;
     margin-left: 60px;
+    margin-top: 15px;
 }
 
 
@@ -1249,13 +1255,20 @@ input:checked+.bluetooth::after {
 }
 
 .criteria h2 {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
     font-size: 16px;
-    margin-top: 25px;
-    margin-left: 60px;
-    margin-bottom: 92px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background-color: #dcdcdc;
+    margin: 0 auto;
+    padding-left: 60px;
 
 }
 
@@ -1324,6 +1337,7 @@ input:checked+.bluetooth::after {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 0 0 70px;
+    margin-top: 1px;
 }
 
 .select-page {
@@ -1335,7 +1349,24 @@ input:checked+.bluetooth::after {
 
 .select-num {
     display: flex;
+    padding: 0 27px 0 30px;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
 
+.select-num li {
+    margin: 0 15px;
+}
+
+.select-num li:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.select-num li:last-child {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .form-filter {
@@ -1352,11 +1383,27 @@ input:checked+.bluetooth::after {
     color: #000;
     margin-left: 60px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 
-.filter-line {
+.filter-line-1 {
+    width: 201px;
+    height: 2px;
+    background-color: #000;
+    margin-left: 60px;
+    margin-top: 140px;
+}
+
+.filter-line-2 {
+    width: 201px;
+    height: 2px;
+    background-color: #000;
+    margin-left: 60px;
+    margin-top: 73px;
+}
+
+.filter-line-3 {
     width: 201px;
     height: 2px;
     background-color: #000;
@@ -1387,8 +1434,8 @@ input:checked+.bluetooth::after {
 }
 
 .color-item {
-    margin-left: 20px;
-    margin-bottom: 44px;
+    margin-left: 19px;
+    margin-bottom: 21px;
 }
 
 .color-item li {
@@ -1397,7 +1444,8 @@ input:checked+.bluetooth::after {
     font-weight: 300;
     color: #000;
     list-style: none;
-    margin-bottom: 14px;
+    width: 200px;
+    height: 40px;
 }
 
 .catalog-item {
@@ -1410,6 +1458,7 @@ input:checked+.bluetooth::after {
     margin-bottom: 25px;
 
 }
+
 
 .catalog-text-price {
     display: flex;
@@ -1517,6 +1566,13 @@ input:checked+.bluetooth::after {
     opacity: 0.2;
 }
 
+.price-text {
+    margin-top: 9px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+
+}
 
 .price {
     font-size: 16px;
@@ -1564,10 +1620,13 @@ section ul {
     background-color: #fff;
 } */
 
+
 .modal {
+    position: fixed;
     display: none;
 
 }
+
 
 .modal-show {
     display: block;
@@ -1583,6 +1642,7 @@ section ul {
     margin: 0 auto;
     box-shadow: 0 0 5px;
     background-color: #fff;
+    animation: bounce 0.6s;
 }
 
 
