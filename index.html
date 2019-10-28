@@ -208,7 +208,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <div class="category-img"> <img src="img/svg-device/popular-2.svg" width="86" height="117" alt="Моноподы для селфи" /> </div>
+                                <div class="category-img"> <img class="category-img-2" src="img/svg-device/popular-2.svg" width="86" height="117" alt="Моноподы для селфи" /> </div>
                             
                             <p class="category-text">Моноподы<br> для селфи</p>
                             </a>
@@ -301,16 +301,16 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#"> <img class="partners-logo-1" src="img/dji.png" alt="Лого" /> </a>
+                        <a class="partners-link" href="#"> <img class="partners-logo-1" src="img/dji-hover.png" alt="Лого" /> </a>
                     </li>
                     <li>
-                        <a href="#"> <img class="partners-logo-2" src="img/sp-gadgets.png" alt="Лого" /> </a>
+                        <a class="partners-link" href="#"> <img class="partners-logo-2" src="img/sp-gadgets-hover.png" alt="Лого" /> </a>
                     </li>
                     <li>
-                        <a href="#"> <img class="partners-logo-3" src="img/gopro.png" alt="Лого" /> </a>
+                        <a class="partners-link" href="#"> <img class="partners-logo-3" src="img/gopro-hover.png" alt="Лого" /> </a>
                     </li>
                     <li>
-                        <a href="#"> <img class="partners-logo-4" src="img/vive.png" alt="Лого" /> </a>
+                        <a class="partners-link" href="#"> <img class="partners-logo-4" src="img/vive-hover.png" alt="Лого" /> </a>
                     </li>
                 </ul>
             </div>
@@ -452,7 +452,7 @@
 
         var form = popup.querySelector("form");
         var login = popup.querySelector("[name=login]");
-        var login = popup.querySelector("[name=email]");
+        var email = popup.querySelector("[name=email]");
 
         var isStorageSupport = true;
         var storage = "";
@@ -465,7 +465,7 @@
         link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
-        
+
         if (storage) {
         login.value = storage;
         email.focus();
