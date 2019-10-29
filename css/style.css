@@ -247,7 +247,7 @@ a {
 }
 
 .main-user-name {
-    width:180px;
+    width: 180px;
 }
 
 .main-user-exit {
@@ -258,7 +258,7 @@ a {
 
 
 .user-name {
-    width:180px;
+    width: 180px;
 }
 
 .user-exit {
@@ -266,6 +266,14 @@ a {
     margin-left: 21px;
     margin-right: 25px;
     cursor: pointer;
+}
+
+.user-exit:hover {
+    opacity: 1;
+}
+
+.user-exit:active {
+    opacity: 0.1;
 }
 
 
@@ -514,6 +522,13 @@ a {
 }
 
 
+.btn-test:active {
+    opacity: 0.3;
+}
+
+
+
+
 .slider-btn {
     border: none;
     cursor: pointer;
@@ -573,7 +588,9 @@ a {
 
 .category-img-2 {
     margin-bottom: -40px;
+    opacity: 1;
 }
+
 
 .category-img {
     background-color: #f7e296;
@@ -599,6 +616,7 @@ a {
     font-size: 18px;
     font-weight: 800;
     color: #000;
+    opacity: 1;
 }
 
 
@@ -962,12 +980,73 @@ a {
     margin-bottom: 5px;
 }
 
+.footer-logo {
+    opacity: 1;
+}
+
+.footer-logo:hover {
+    opacity: 0.7;
+}
+
+.footer-logo:active{ 
+    opacity: 0.3;
+}
+
+
+.login-link-footer {
+    opacity: 0.7;
+}
+
+.login-link-footer:hover {
+    opacity: 1;
+}
+
+.login-link-footer:active {
+    opacity: 0.3;
+}
+
+.user-compare-footer {
+    opacity: 0.7;
+}
+
+.user-compare-footer:hover {
+    opacity: 1;
+}
+
+.user-compare-footer:active {
+    opacity: 0.3;
+}
+
+.user-cart-footer {
+    opacity: 0.7;
+}
+
+.user-cart-footer:hover {
+    opacity: 1;
+}
+
+.user-cart-footer:active {
+    opacity: 0.3;
+}
+
 
 .footer2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.footer-nav-item {
+    opacity: 0.7;
+}
+
+.footer-nav-item:hover {
+    opacity: 1;
+}
+
+.footer-nav-item:active {
+    opacity: 0.3;
 }
 
 .footer-phone {
@@ -981,6 +1060,31 @@ a {
     align-items: center;
 }
 
+
+.footer-social {
+    opacity: 0.3;
+}
+
+.footer-social:hover {
+    opacity: 0.6;
+}
+
+.footer-social:active {
+    opacity: 0.1;
+}
+
+
+.htmlacademy-logo {
+    opacity: 1;
+}
+
+.htmlacademy-logo:hover {
+    opacity: 0.6;
+}
+
+.htmlacademy-logo:active {
+    opacity: 0.3;
+}
 
 .footer-line {
     width: 80px;
@@ -1275,6 +1379,18 @@ input:checked+.bluetooth::after {
     margin: 0 auto;
     padding-left: 60px;
 
+}
+
+
+.criteria h2::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 100vw;
+    height: 100%;
+    background: #dcdcdc;
+    z-index: -1;
 }
 
 .criteria p {
