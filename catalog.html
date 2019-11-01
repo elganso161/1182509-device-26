@@ -19,7 +19,7 @@
                         <li>
                             <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
                                 <label for="site-search">
-                                    <img class="search-img" src="img/svg-device/search.svg" alt="Поиск" />
+                                    <img class="search-img" src="img/svg-device/search.svg" alt="Поиск" width="16" height="16" />
                                 </label>
                                 <input class="header-search" type="search" name="search" id="site-search" placeholder="Поиск по сайту" />
                                 <button class="search-button" type="submit">Найти</button>
@@ -29,7 +29,7 @@
                     <ul class="user-enter">
                         <li class="useer-name">
                             <a class="login-link" href="login.html">
-                                <img class="login-img" src="img/svg-device/user.svg" alt="Пользователь" /> Валентин Петухов
+                                <img class="login-img" src="img/svg-device/user.svg" alt="Пользователь" width="13" height="12" /> Валентин Петухов
                             </a>
                         </li>
                         <li>
@@ -38,10 +38,10 @@
                     </ul>
                     <ul class="user-compare">
                         <li>
-                            <a href="#"> <img class="compare-img" src="img/compare.svg" alt="Сравнить" /> Сравнить </a>
+                            <a href="#"> <img class="compare-img" src="img/compare.svg" alt="Сравнить" width="10" height="10" /> Сравнить </a>
                         </li>
                         <li>
-                            <a class="user-cart" href="#"> <img class="cart-img" src="img/cart.svg" alt="Корзина" /> Корзина </a>
+                            <a class="user-cart" href="#"> <img class="cart-img" src="img/cart.svg" alt="Корзина"  width="12" height="12" /> Корзина </a>
                         </li>
                     </ul>
                 </div>
@@ -94,8 +94,8 @@
         <div class="container">
             <h1 class="title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
-                <li> <a href="index.html">Главная</a> <img src="img/svg-device/nav-arrow.svg" alt="" /> </li>
-                <li> <a href="#">Каталог товаров</a> <img src="img/svg-device/nav-arrow.svg" alt="" /> </li>
+                <li> <a href="index.html">Главная</a> <img src="img/svg-device/nav-arrow.svg" alt="Стрелка" width="4" height="7" /> </li>
+                <li> <a href="#">Каталог товаров</a> <img src="img/svg-device/nav-arrow.svg" alt="Стрелька" width="4" height="7" /> </li>
                 <li class="breadcrumbs-current">Моноподы для селфи</li>
             </ul>
         </div>
@@ -104,6 +104,7 @@
                 <div class="criteria-product">
                     <div class="criteria">
                         <h2>Фильтр:</h2>
+                        <form class="form-filter" method="GET" action="https://echo.htmlacademy.ru">
                         <div class="filter-line-1"></div>
                         <p class="price-text">
                             <label for="price">Стоимость</label>
@@ -118,44 +119,44 @@
                         </div>
                         <div class="filter-line-2"></div>
                         <h4 class="filter-title">Цвет</h4>
-                        <form class="form-filter" method="GET" action="https://echo.htmlacademy.ru">
+                        
                             <ul class="color-item">
                                 <li>
-                                    <input class="visually-hidden" id="color-item-black" type="checkbox" name="color-item" />
+                                    <input class="visually-hidden" id="color-item-black" type="checkbox" name="color-black" />
                                     <label class="color-checkbox" for="color-item-black">Черный</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" id="color-item-white" type="checkbox" name="color-item" />
+                                    <input class="visually-hidden" id="color-item-white" type="checkbox" name="color-white" />
                                     <label class="color-checkbox" for="color-item-white">Белый</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" id="color-item-Blue" type="checkbox" name="color-item" />
-                                    <label class="color-checkbox" for="color-item-Blue">Синий</label>
+                                    <input class="visually-hidden" id="color-item-blue" type="checkbox" name="color-blue" />
+                                    <label class="color-checkbox" for="color-item-blue">Синий</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" id="color-item-red" type="checkbox" name="color-item" />
+                                    <input class="visually-hidden" id="color-item-red" type="checkbox" name="color-red" />
                                     <label class="color-checkbox" for="color-item-red">Красный</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" id="color-item-Pink" type="checkbox" name="color-item" />
-                                    <label class="color-checkbox" for="color-item-Pink">Розовый</label>
+                                    <input class="visually-hidden" id="color-item-pink" type="checkbox" name="color-pink" />
+                                    <label class="color-checkbox" for="color-item-pink">Розовый</label>
                                 </li>
                             </ul>
-                        </form>
+                        
                         <div class="filter-line-3"></div>
                         <h5 class="filter-title">Bluetooth</h5>
-                        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+                        
                             <ul class="color-item">
                                 <li>
-                                    <input class="visually-hidden" id="Bluetooth-yes" type="radio" name="bluetooth" />
+                                    <input class="visually-hidden" id="Bluetooth-yes" type="radio" name="bluetooth" value="yes" />
                                     <label class="bluetooth" for="Bluetooth-yes">Есть</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden" id="Bluetooth-no" type="radio" name="bluetooth" />
+                                    <input class="visually-hidden" id="Bluetooth-no" type="radio" name="bluetooth" value="no" />
                                     <label class="bluetooth" for="Bluetooth-no"> Нет</label>
                                 </li>
                             </ul>
-                            <button class="show-btn" type="button">ПОКАЗАТЬ</button>
+                            <button class="show-btn" type="submit">ПОКАЗАТЬ</button>
                         </form>
                     </div>
                     <div class="product">
@@ -170,10 +171,10 @@
 
                             <div class="product-btn">
                                 <a class="product-btn-up" href="#">
-                                    <img aria-label="Кнопка сортировки вверх" src="img/svg-device/icon-up-dir.svg" alt="icon-up" />
+                                    <img aria-label="Кнопка сортировки вверх" src="img/svg-device/icon-up-dir.svg" alt="icon-up" width="11" height="10" />
                                 </a>
                                 <a class="product-btn-down" href="#">
-                                    <img aria-label="Кнопка сортировки вниз" src="img/svg-device/icon-down-dir.svg" alt="icon-down" />
+                                    <img aria-label="Кнопка сортировки вниз" src="img/svg-device/icon-down-dir.svg" alt="icon-down" width="11" height="10" />
                                 </a>
                             </div>
                         </div>
@@ -185,8 +186,8 @@
                                         <img class="catalog-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" />
                                     </a>
                                     <div class="catalog-add">
-                                        <button type="button" class="add-to-cart">В корзину</button>
-                                        <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                                        <a href="#" class="add-to-cart">В корзину</a>
+                                        <a href="#" class="add-to-compare">Добавить к сравнению</a>
                                     </div>
                                 </div>
                                 <div class="catalog-text-price">
@@ -200,13 +201,13 @@
                                         <img class="catalog-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" />
                                     </a>
                                     <div class="catalog-add">
-                                        <button type="button" class="add-to-cart">В корзину</button>
-                                        <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                                        <a href="#" class="add-to-cart">В корзину</a>
+                                        <a href="#" class="add-to-compare">Добавить к сравнению</a>
                                     </div>
                                 </div>
                                 <div class="catalog-text-price">
                                     <a href="#">Профессиональная <br>селфи-палка</a>
-                                    <span class="price">1500 руб.</span>
+                                    <span class="price">1&nbsp;500 руб.</span>
                                 </div>
                             </li>
 
@@ -214,27 +215,27 @@
                                 <div class="catalog-img">
                                     <a href="#"> <img class="catalog-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" /> </a>
                                     <div class="catalog-add">
-                                        <button type="button" class="add-to-cart">В корзину</button>
-                                        <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                                        <a href="#" class="add-to-cart">В корзину</a>
+                                        <a href="#" class="add-to-compare">Добавить к сравнению</a>
                                     </div>
                                 </div>
                                 <div class="catalog-text-price">
                                     <a href="#">Непотопляемая селфи-палка</a>
-                                    <span class="price">2500 руб.</span>
+                                    <span class="price">2&nbsp;500 руб.</span>
                                 </div>
                             </li>
 
-                            <li class="catalog-item">
+                            <li class="catalog-item new">
                                 <div class="catalog-img">
                                     <a href="#"> <img class="catalog-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»" /> </a>
                                     <div class="catalog-add">
-                                        <button type="button" class="add-to-cart">В корзину</button>
-                                        <button type="button" class="add-to-compare">Добавить к сравнению</button>
+                                        <a href="#" class="add-to-cart">В корзину</a>
+                                        <a href="#" class="add-to-compare">Добавить к сравнению</a>
                                     </div>
                                 </div>
                                 <div class="catalog-text-price">
                                     <a href="#">Селфи-палка «Следуй за мной»</a>
-                                    <span class="price">4900 руб.</span>
+                                    <span class="price">4&nbsp;900 руб.</span>
                                 </div>
                             </li>
                         </ul>
@@ -263,7 +264,7 @@
                         <ul class="footer-user">
                             <li>
                                 <a class="login-link-footer" href="login.html">
-                                    <img src="img/svg-device/footer-user.svg" alt="Пользователь" /> Валенитн Петухов
+                                    <img src="img/svg-device/footer-user.svg" alt="Пользователь" width="13" height="12" /> Валенитн Петухов
                                 </a>
                             </li>
                             <li>
@@ -271,11 +272,11 @@
                             </li>
                             <li>
                                 <a class="user-compare-footer" href="#">
-                                    <img src="img/svg-device/footer-compare.svg" alt="Сравнить" /> Сравнить
+                                    <img src="img/svg-device/footer-compare.svg" alt="Сравнить"  width="10" height="10" /> Сравнить
                                 </a>
                             </li>
                             <li>
-                                <a class="user-cart-footer" href="#"> <img src="img/svg-device/footer-cart.svg" alt="Корзина" /> Корзина
+                                <a class="user-cart-footer" href="#"> <img src="img/svg-device/footer-cart.svg" alt="Корзина" width="12" height="12" /> Корзина
                                 </a>
                             </li>
                         </ul>
@@ -304,18 +305,18 @@
                         <h2 class="visually-hidden ">Соцсети</h2>
                         <ul class="social ">
                             <li>
-                                <a aria-label="Фэйсбук " href="# "><img aria-label="Фэйсбук " class="footer-social " src="img/facebook.svg " alt="Фэйсбук " /></a>
+                                <a aria-label="Фэйсбук " href="# "><img aria-label="Фэйсбук " class="footer-social " src="img/facebook.svg " alt="Фэйсбук " width="32" height="32" /></a>
                             </li>
                             <li>
-                                <a aria-label="Инстаграм " href="# "><img aria-label="Инстаграм " class="footer-social " src="img/instagram.svg " alt="Инстаграм " /></a>
+                                <a aria-label="Инстаграм " href="# "><img aria-label="Инстаграм " class="footer-social " src="img/instagram.svg " alt="Инстаграм " width="32" height="32" /></a>
                             </li>
                             <li>
-                                <a aria-label="Твитер " href="# "><img aria-label="Твитер " class="footer-social " src="img/twiter.svg " alt="Твитер " /></a>
+                                <a aria-label="Твитер " href="# "><img aria-label="Твитер " class="footer-social " src="img/twiter.svg " alt="Твитер " width="32" height="32" /></a>
                             </li>
                         </ul>
                         </div>
                         <div>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss. "><img aria-label="Логотип htmlacademy" class="htmlacademy-logo " src="img/svg-device/logo-html.svg " alt="Логотип htmlacademy "></a>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img aria-label="Логотип htmlacademy" class="htmlacademy-logo " src="img/svg-device/logo-html.svg " alt="Логотип htmlacademy "></a>
                         </div>
                 </div>
             </div>
