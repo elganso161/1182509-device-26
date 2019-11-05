@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #000;
-	font-family: "Gilroy", "Arial";
+	font-family: "Gilroy", "Arial", "sans-serif";
 	line-height: 24px;
 	letter-spacing: 0.15px;
 	min-width: 1200px;
@@ -26,14 +26,14 @@ html {
 }
 
 @font-face {
-	font-family: Gilroy;
+	font-family: "Gilroy";
 	src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: Gilroy;
+	font-family: "Gilroy";
 	src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
 	font-weight: 800;
 	font-style: normal;
@@ -1287,8 +1287,32 @@ a {
 	margin-left: -50px;
 }
 
+.main-footer-user {
+    width: 340px;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 11px 0 23px;
+}
+
+.main-footer-user a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #fff;
+}
+
+
+.main-footer-user img {
+	margin-right: 10px;
+	margin-left: 27px;
+}
+
 .footer-user {
-    width: 485px;
+    width: 495px;
 	list-style: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1678,7 +1702,8 @@ input:checked+.bluetooth::after {
 	background-color: #ebebeb;
 	width: 760px;
 	height: 70px;
-	margin-left: 72px;
+    margin-left: 72px;
+    margin-bottom: 80px;
 }
 
 .select-num {
@@ -1784,10 +1809,15 @@ input:checked+.bluetooth::after {
 	margin-bottom: 25px;
 }
 
-.mark {
-	position: absolute;
-	top: 50;
-	left: 10;
+.new {
+    position: relative;
+}
+
+.new::before {
+    position: absolute;
+    content: "new";
+	top: 33px;
+	left: 275px;
 	z-index: 1;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -1797,8 +1827,6 @@ input:checked+.bluetooth::after {
 	padding: 15px 12px;
 	border-radius: 50%;
 	border: 2px solid #000;
-	margin-top: 33px;
-	margin-left: 275px;
 }
 
 .catalog-text-price {
@@ -1882,7 +1910,7 @@ input:checked+.bluetooth::after {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	margin-top: 5px;
+	margin-top: 7px;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
@@ -2056,8 +2084,10 @@ section ul {
 	outline: none;
 }
 
+
+
 .text-user {
-	padding: 0 70px;
+    padding: 0 70px;
 }
 
 .text-user textarea {
