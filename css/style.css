@@ -210,7 +210,8 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-left: 71px;
+    margin-left: 71px;
+    letter-spacing: 0.15px;
 }
 
 .login-img {
@@ -345,15 +346,16 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin: 0;
+    margin: 0;
+    color: #000;
 }
 
 .site-navigation a:hover {
-	opacity: 0.7;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation a:active {
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-item {
@@ -570,6 +572,10 @@ a {
 	transition: 0.3s;
 }
 
+.link-btn:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .link-btn:hover:after {
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -579,9 +585,6 @@ a {
 	transform: scaleY(5);
 }
 
-.btn-test:active {
-	opacity: 0.3;
-}
 
 .slider-btn {
 	border: none;
@@ -641,6 +644,7 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+
 
 .category-img-2 {
 	margin-bottom: -40px;
@@ -842,16 +846,20 @@ a {
 	justify-content: space-between;
 }
 
-.partners-link img {
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
-	opacity: 0.2;
+.partners-logo-1:hover {
+    background: url(..//img/dji-hover.png) center no-repeat;
 }
 
-.partners-link:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	opacity: 1;
+.partners-logo-2:hover {
+    background: url(..//img/sp-gadgets-hover.png) center no-repeat;
+}
+
+.partners-logo-3:hover {
+    background: url(..//img/gopro-hover.png) center no-repeat;
+}
+
+.partners-logo-4:hover {
+    background: url(..//img/vive-hover.png) center no-repeat;
 }
 
 .about-line {
@@ -903,21 +911,20 @@ a {
 }
 
 .transport {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .transport::before {
 	content: "";
 	position: absolute;
-	top: 50;
-	left: 0;
+	top: 10px;
+	left: -35px;
 	z-index: 1;
 	width: 8px;
 	height: 8px;
 	border: #e5e5e5 2px solid;
 	border-radius: 50%;
-	margin-top: 10px;
-	margin-left: 180px;
 }
 
 .contact {
@@ -953,13 +960,17 @@ a {
 	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
-	opacity: 1;
+
 	padding: 0 44px;
 	width: 220px;
 	letter-spacing: 0.2em;
 	z-index: 1;
 	padding: 0 21px;
 	margin-left: 2px;
+}
+
+.info:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .info::after {
@@ -993,7 +1004,6 @@ a {
 	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
-	opacity: 1;
 	padding: 0 44px;
 	width: 260px;
 	letter-spacing: 0.2em;
@@ -1001,6 +1011,10 @@ a {
 	padding: 0 40px;
 	margin-top: 2px;
 	margin-left: 2px;
+}
+
+.communication:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .communication::after {
@@ -1203,15 +1217,15 @@ a {
 }
 
 .footer-nav-item {
-	opacity: 0.7;
+	color: #fff;
 }
 
 .footer-nav-item:hover {
-	opacity: 1;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-nav-item:active {
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-phone {
@@ -1465,7 +1479,6 @@ input:checked+.bluetooth::after {
 	border: none;
 	cursor: pointer;
 	position: relative;
-	opacity: 1;
 	padding: 0 40px;
 	width: 200px;
 	letter-spacing: 0.2em;
@@ -1473,6 +1486,10 @@ input:checked+.bluetooth::after {
 	z-index: 1;
 	margin-left: 60px;
 	margin-top: 19px;
+}
+
+.show-btn:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .show-btn::after {
@@ -1530,21 +1547,29 @@ input:checked+.bluetooth::after {
 	font-weight: 300;
 	color: #000;
 	list-style: none;
-	padding: 0 10px;
-	opacity: 0.3;
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs li:hover {
-	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumbs li:active {
-	opacity: 0.1;
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .breadcrumbs a {
-	padding: 0 10px;
-	opacity: 0.3;
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1);
 }
 
 .cat-nav {
@@ -1628,6 +1653,12 @@ input:checked+.bluetooth::after {
 }
 
 .product-btn {
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+    left: -10px;
+    justify-content: space-between;
+    width: 40px;
 	list-style: none;
 	border: none;
 	background: transparent;
@@ -1767,15 +1798,15 @@ input:checked+.bluetooth::after {
 	padding: 0 15px;
 	width: 150px;
 	white-space: nowrap;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .filter-item a:hover {
-	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .filter-item a:active {
-	opacity: 1;
+	color: #000;
 }
 
 .filter-item li:last-child {
@@ -1841,8 +1872,8 @@ input:checked+.bluetooth::after {
 }
 
 .catalog-text-price a {
-	width: 255px;
-	height: 65px;
+	width: 505px;
+	min-height: 65px;
 }
 
 .catalog-img {
@@ -1901,6 +1932,10 @@ input:checked+.bluetooth::after {
 	position: relative;
 }
 
+.add-to-cart:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .add-to-cart::after {
 	content: "";
 	background-color: #f0c52e;
@@ -1932,16 +1967,16 @@ input:checked+.bluetooth::after {
 	border: none;
 	outline: none;
 	background: none;
-	cursor: pointer;
-	opacity: 0.5;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .add-to-compare:hover {
-	opacity: 1;
+    color: #000;
 }
 
 .add-to-compare:active {
-	opacity: 0.2;
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .price-text {
@@ -1956,7 +1991,7 @@ input:checked+.bluetooth::after {
 .price {
 	font-size: 16px;
 	font-weight: 300;
-	color: #000;
+	color: #464646;
 	margin-bottom: 35px;
 	width: 200px;
 	text-align: end;
@@ -1998,9 +2033,9 @@ section ul {
 /* MODAL */
 
 .modal-login {
-	position: absolute;
-	top: 1800px;
-	left: 165px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 	z-index: 1;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2011,6 +2046,7 @@ section ul {
 	-webkit-box-shadow: 0 0 5px;
 	box-shadow: 0 0 5px;
     background-color: #fff;
+    transform: translate(-50%, -50%);
 }
 
 .modal {
@@ -2093,7 +2129,8 @@ section ul {
 .text-user textarea {
 	background-color: #f2f2f2;
 	border: none;
-	padding-left: 20px;
+    padding-left: 20px;
+    width: 762px;
 }
 
 .text-user textarea:focus {
@@ -2199,10 +2236,11 @@ section ul {
 
 .modal-map {
 	display: none;
-	position: absolute;
-	top: 1880px;
-	left: 165px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
 	z-index: 1;
 	width: 960px;
-	height: 560px;
+    height: 560px;
+    transform: translate(-50%, -50%);
 }
