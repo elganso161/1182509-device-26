@@ -1,3 +1,4 @@
+https://elganso161.github.io/Device/.
 # Личный проект «Девайс»
 
 * Студент: [el ganso](https://up.htmlacademy.ru/htmlcss/26/user/1182509).
